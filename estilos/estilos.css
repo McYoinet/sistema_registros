@@ -1,1 +1,96 @@
+/*Importaciones externas*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+/*Estilos generales*/
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: rgb(59, 59, 59);
+}
+
+a{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(158, 158, 255);
+    margin-bottom: 12px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: white;
+}
+
+.contenedor{
+    position: relative;
+    top: 120px;
+    background: rgb(36, 36, 36);
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: auto;
+}
+
+.contenedor a{
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+#pie{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    font-size: 13.5px;
+}
+
+/*Formulario*/
+
+input{
+    width: 90%;
+    height: 24px;
+    margin: 10px;
+    background: rgb(19, 19, 19);
+    border: none;
+    color: rgb(192, 192, 192);
+    padding-left: 7px;
+}
+
+input::placeholder{
+    color: rgb(133, 133, 133);
+}
+
+.boton{
+    width: 120px;
+    text-align: center;
+    color: white;
+    background: rgb(25, 25, 207);
+    border: none;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.boton:hover{
+    cursor: pointer;
+    animation-name: boton;
+    animation-duration: .3s;
+    background-color: rgb(84, 84, 252);
+}
+
+p{
+    color: white;
+}
+
+/*Animaciones*/
+@keyframes boton{
+    from{
+        background-color: rgb(25, 25, 207);
+    }
+    to{
+        background-color: rgb(84, 84, 252);
+    }
+}
